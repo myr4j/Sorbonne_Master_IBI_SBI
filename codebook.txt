@@ -1,0 +1,19 @@
+pid                         ID
+regi                        Code postal
+r1                          Département
+uda5                        Région Marketing en 5
+uda9                        Région Markéting en 9
+agglo_new                   Type d'agglomération
+age                         Age
+gender                      Sexe
+s2ad                        Catégorie Socio-professionnelle
+s3ad                        Habitude de fréquentation
+s4ad                        Possession d'un abonnement illimité
+q1ad                        Date de l'entrée au cinéma
+q2ad                        Code du film vue
+q12ad_1                     Note
+q13ad                       Nombre de personnes accompagnantes
+q14ad                       Département du cinéma
+q14bisad                    Code du cinéma
+q15ad                       Cinéma habituel
+vague_cine_inv              Vague d'interviews
