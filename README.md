@@ -2,7 +2,8 @@
 This repository is for students from Université Paris I La Sorbonne following the class "Analyse des données avec python"
 
 
-
 # Install locally
-Download and install git bash
-Open it and move to your home
+- Download and install git bash
+- Open it and move to your home
+- Clone the repo (git clone {url})
+- Change directory
