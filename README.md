@@ -1,27 +1,105 @@
-# sorbonne_2025_2026
-This repository is for students from Université Paris I La Sorbonne following the class "Analyse des données avec python"
+# sorbonne
+Ce repo est à destination des étudiants en Master IBI et SBI de l'Université Paris I La Sorbonne pour le cours "Analyse des données avec python"
+
+==================================================
+INSTALLATION DE VS CODE + ENVIRONNEMENT VENV + GIT
+==================================================
+
+🎯 Objectifs :
+---------------
+Préparer un environnement de développement Python propre et professionnel avec Visual Studio Code, un environnement virtuel (venv), et la connexion à un dépôt Git.
+
+🎓 Pré-requis :
+----------------
+- Python installé (https://www.python.org/downloads/)
 
 
-🚀 Steps to connect VS Code to a GitHub repository:
-✅ 1. Install Git (if not already)
-Download from git-scm.com and install.
+1. INSTALLER VISUAL STUDIO CODE
+-------------------------------
 
-✅ 2. Open VS Code and sign into GitHub
-Open the Command Palette (Ctrl+Shift+P or Cmd+Shift+P).
+    ✅ 1.1 Télécharger VS Code :
+    -------------------------
+    Aller sur : https://code.visualstudio.com/
+    Télécharger la version correspondant à votre système (Windows, macOS, ou Linux), puis l’installer.
 
-Search for GitHub: Sign in and follow the prompts to authenticate.
+    ✅ 1.2 Lancer VS Code :
+    --------------------
+    Une fois installé, ouvrir le logiciel.
 
-Alternatively:
+    ✅ 1.3 Installer l’extension Python :
+    ----------------------------------
+        Cliquer sur l’icône des extensions (à gauche).
+        Rechercher "Python" (éditeur : Microsoft).
+        Cliquer sur "Installer".
 
-Go to the Source Control tab (the branch icon on the sidebar).
+    ✅ 1.4 (Optionnel mais recommandé) : Installer l’extension GitHub
+    --------------------------------------------------------------
+    Même procédure que ci-dessus, rechercher "GitHub Pull Requests and Issues".
 
-VS Code will prompt you to sign in if needed.
 
-✅ 3. Clone a GitHub repository
-In VS Code:
 
-Open the Command Palette and run:
+2. CONNECTER GIT A UN REPO GITHUB
+----------------------------------
 
-git clone {url} (Paste your GitHub repo URL (e.g., https://github.com/yourusername/your-repo.git))
+    ✅ 2.1. Installer Git si ce n'est pas déjà fait
+    --------------------------------------------
+    Download from git-scm.com and install.
 
-Choose a folder to clone it into.
+    ✅ 2.2. Ouvrir VSCode pour se connecter à GitHub
+    ---------------------------------------------
+    Ouvir la pallette de commande:
+        - Windows : Ctrl+Shift+P
+        - Mac: Cmd+Shift+P
+
+    Chercher GitHub: connectez-vous et suivant les indications pour vous authentifier.
+
+    ✅ 2.3. Autre méthode:
+    ----------------------
+    Ouvrir le menu Source Control:
+        - Cliquer l'icone en forme de branche dans la barre de tâche latéral gauche.
+        - Raccourci clavier Windows : Ctrl+Shift+G
+        - Raccourci clavier Mac: Cmd+Shift+G
+
+    VS Code vous demandera de vous authentifier si besoin.
+
+    ✅ 2.4. Cloner un repo GitHub
+    ----------------------
+    Dans VS Code:
+        Ouvir la pallette de commande:
+            - Windows : Ctrl+Shift+P
+            - Mac: Cmd+Shift+P
+
+        Taper:
+            git clone https://github.com/Anthony-Lannes/sorbonne_2025_2026.git
+
+    Choisissez un dossier dans lequel cloner le repo.
+
+
+3. CRÉER UN PROJET PYTHON AVEC VENV
+-----------------------------------
+
+    ✅ 3.1 Créer et ouvrir un dossier :
+    -----------------------------------
+    Créer un dossier sur votre machine (exemple : `mon_projet_python`).
+    Dans VS Code : *Fichier > Ouvrir un dossier* → sélectionner ce dossier.
+
+    ✅ 3.2 Ouvrir le terminal intégré :
+    -----------------------------------
+    Menu : *Terminal > Nouveau terminal*
+
+    ✅ 3.3 Créer l’environnement virtuel :
+    --------------------------------------
+        - Windows : python -m venv env
+        - macOS/Linux : python3 -m venv env
+    Un dossier `env/` sera créé : c’est votre environnement isolé.
+
+    ✅ 3.4 Activer l’environnement :
+    ---------------------------------
+        - Windows (PowerShell) : .\env\Scripts\Activate.ps1
+        - macOS/Linux : source env/bin/activate
+
+    Une fois activé, l’invite du terminal commence par `(env)`.
+
+    ✅ 3.5 Installer des bibliothèques :
+    ---------------------------------
+    Exemple : pip install pandas==2.3.0 numpy==1.26.4 plotly==6.2.0

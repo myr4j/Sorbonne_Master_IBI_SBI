@@ -1,0 +1,114 @@
+vague_cine_inv      
+    range(2326, 2331)
+
+age
+    range(3, 121)
+
+gender
+    1 : Hommes
+    2 : Femmes   
+
+regi
+    range(1_000, 100_000)
+
+r1
+    range(1, 96)
+
+uda5
+    1 : Ile de France
+    2 : Nord Ouest
+    3 : Nord Est
+    4 : Sud Ouest
+    5 : Sud Est
+
+uda9
+    1 : Paris et région parisienne
+    2 : Nord
+    3 : Est
+    4 : Bassin Parisien Est
+    5 : Bassin Parisien Ouest
+    6 : Ouest
+    7 : Sud-Ouest
+    8 : Sud-Est
+    9 : Méditerranée
+
+agglo_new
+    1 : zone rurale
+    2 : moins de 10 000 hab.
+    3 : 10 000 à 20 000 hab.
+    4 : 20 000 à 50 000 hab.
+    5 : 50 000 à 100 000 hab.
+    6 : 100 000 à 200 000 hab.
+    7 : 200 000 hab. et plus (hors Paris)
+    8 : Paris
+
+s2ad
+    1 : Agriculteurs
+    2 : Artisan
+    3 : Commerçant
+    4 : Chef d’entreprise de moins de 10 salariés
+    5 : Chef d’entreprise de plus de 10 salariés
+    6 : Cadre de la fonction publique
+    7 : Profession des informations, des arts et du spectacle
+    8 : Cadre d’entreprise : administratifs, commerciaux, ingénieurs, cadres techniques
+    9 : Professions libérales
+    10 : Professeur, Professions scientifiques
+    11 : Professeur, professeurs des écoles
+    12 : Professions intermédiaires de la santé et du social 
+    13 : Profession du Clergé
+    14 : Professions intermédiaires de la fonction publique Catégorie B 
+    15 : Professions intermédiaires d’entreprise 
+    16 : Technicien
+    17 : Contremaître, agent de maîtrise
+    18 : Employé civil, agent de service de la fonction publique 
+    19 : Employé d’entreprise
+    20 : Ouvriers
+    21 : Etudiant, lycéen, collégien
+    22 : Elève
+    23 : Chômeur ayant déjà travaillé
+    24 : Chômeur n’ayant jamais travaillé
+    25 : Homme/Femme au foyer
+    26 : Retraité
+    27 : Autre inactif
+
+s3ad
+    1 : Plusieurs fois par semaine
+    2 : 1 fois par semaine
+    3 : 2 à 3 fois par mois
+    4 : 1 fois par mois
+    5 : 1 fois tous les 2-3 mois
+    6 : 1 fois tous les 6 mois
+    7 : 1 fois par an
+    8 : Moins souvent
+
+s4ad
+    1 : Oui, la carte UGC illimité valable dans les cinémas UGC et MK2
+    2 : Oui la carte CinéPass valable dans les cinémas PATHÉ et GAUMONT
+    3 : Non
+
+q1ad                        datetime    Date de l'entrée au cinéma
+
+
+q2ad 
+
+
+q12ad_1
+    range(0, 11)
+
+q13ad
+    1 : J’étais seul(e)
+    2 : Nous étions 2 personnes
+    3 : Nous étions 3 personnes
+    4 : Nous étions 4 personnes
+    5 : Nous étions 5 personnes
+    6 : Nous étions 6 personnes ou plus
+
+q14ad
+    range(1, 96)
+
+q14bisad                    Int64   Code du cinéma
+    range(1_000_000, 10_000_000)
+
+q15ad                       Int8    Cinéma habituel
+    1 : Je vais toujours ou presque toujours dans ce cinéma
+    2 : Ce n’est pas mon cinéma habituel

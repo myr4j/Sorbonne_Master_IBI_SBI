@@ -1,19 +1,20 @@
-pid                         ID
-regi                        Code postal
-r1                          Département
-uda5                        Région Marketing en 5
-uda9                        Région Markéting en 9
-agglo_new                   Type d'agglomération
-age                         Age
-gender                      Sexe
-s2ad                        Catégorie Socio-professionnelle
-s3ad                        Habitude de fréquentation
-s4ad                        Possession d'un abonnement illimité
-q1ad                        Date de l'entrée au cinéma
-q2ad                        Code du film vue
-q12ad_1                     Note
-q13ad                       Nombre de personnes accompagnantes
-q14ad                       Département du cinéma
-q14bisad                    Code du cinéma
-q15ad                       Cinéma habituel
-vague_cine_inv              Vague d'interviews
+nom_colonne         type        signification                 
+pid                 Int64       ID
+vague_cine_inv      Int16       Vague d'interviews
+age                 Int8        Age
+gender              Int8        Sexe
+regi                Int32       Code postal
+r1                  Int8        Département
+uda5                Int8        Région Marketing en 5
+uda9                Int8        Région Markéting en 9
+agglo_new           Int8        Type d'agglomération
+s2ad                Int16       Catégorie Socio-Professionnelle
+s3ad                Int8        Habitude de fréquentation
+s4ad                Int8        Possession d'un abonnement illimité     
+q1ad                datetime    Date de l'entrée au cinéma
+q2ad                Int16       Code du film vu
+q12ad_1             Int8        Note
+q13ad               Int8        Nombre de personnes accompagnantes
+q14ad               Int8        Département du cinéma
+q14bisad            Int64       Code du cinéma
+q15ad               Int8        Cinéma habituel

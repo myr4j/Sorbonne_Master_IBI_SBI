@@ -1,0 +1,7 @@
+To clean up your data, lets start by creating a Jupyter Notebook.
+
+1. Place your cursor in the left panel, and click on the "New File" icon in the panel top right corner.
+
+2. Import pandas and numpy
+
+3. You should clean 
