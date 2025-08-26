@@ -70,7 +70,7 @@ Préparer un environnement de développement Python propre et professionnel avec
             - Mac: Cmd+Shift+P
 
         Taper:
-            git clone https://github.com/Anthony-Lannes/sorbonne_2025_2026.git
+            git clone https://github.com/Anthony-Lannes/SORBONNE_MASTER_ICI_SBI.git
 
     Choisissez un dossier dans lequel cloner le repo.
 

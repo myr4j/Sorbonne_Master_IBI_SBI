@@ -1,0 +1,110 @@
+Ce document présente quelques exercices d'exploration des données.
+Il a pour but de vous faire découvrir les manipulations de bases et courantes.
+Parmi toutes les questions, certaines solutions ne sont disponibles dans aucun document de cours. C'est normal.
+Il vous faudra trouver la solution en vous renseignant sur internet, qu'importe l'outil. 
+
+Il est cependant STRICTEMENT INTERDIT :
+    - De passer tout ou partie du jeu de données à un LLM 
+    - De charger le jeu de données sur un cloud ou un support autre que votre PC personnel.
+Ces données sont privées et les révéler vous expose à des poursuites.
+
+
+Pour faciliter votre travail, créer un notebook et nommez-le "02_Exploration.ipynb" (File -> New File -> 02_Exploration.ipynb).
+Puis créez une cellule de type "Markdown" et collez-y chaque question. 
+Enfin répondez à la question avec autant de cellule de type "Code" que nécessaire.
+
+
+0 - Charger les données
+    Commencez par charger les données des fichiers :
+        - data/clean_step_1.pkl
+
+
+1 - Clé unique.
+    Existe-t'il des valeur en double dans la colonne pid ? 
+    Même question en détaillant par vague_cine_inv, puis par vague_cine_inv et âge.
+
+    Filtrez le lignes telles que pid == 1488283857, vague_cine_inv == 2329 et age==67. 
+    Quelles sont les colonnes pour lesquelles les values différent. Déduisez ce que représente une ligne ?
+    Donnez une combinaison de colonne, de préférence avec un sens business, qui garantit l'unicité d'une ligne. 
+
+
+2 - Distributions de base. 
+    Calculez les effectifs et proportions par : 
+        - Sexe
+        - Habitude de frequentation
+        - Régions marketing en 5 et en 9
+        - Type d'agglomération 
+        - Vague cinéma
+
+
+3 - Dates. 
+    Prenez la colonne de date, extrayez le jour, le jour de la semaine, le mois et l'année 
+    avec les attributs : day, dayofweek, month, year. Pourquoi ça ne marche pas ?
+    Cherchez une solution.
+    Quels sont les jours de la semaine où on obtient le plus de réponse ?
+
+
+4 - Notes selon les comportements. 
+    Calculez la moyenne et la médiane des notes attribuées par :
+        - Habitude de fréquentation
+        - Abonnement 
+    Construisez ensuite un tableau croisé Habitude de fréquentation × Abonnement avec la note moyenne. 
+    Quel segment attribue les meilleures notes ?
+
+
+5 - Profil du nombre de personnes par visite. 
+    Décrivez la distribution du nombre d’accompagnants. 
+    Quelle part des visites sont en solo ? Comparer cette part par genre.
+    Comparez cette part par classes d’âge. Pour cela, créez une colonne des classes d'âge suivantes :
+        - 3-14 
+        - 15-24
+        - 25-34
+        - 35-49
+        - 50-59
+        - 60+
+
+
+6 - Mobilité vers les cinémas. 
+    Comparez le département du répondant au département du cinéma. 
+    Quel pourcentage des visites a lieu hors du département de résidence ?
+
+
+7 - Joindre les poids statistiques.
+    Les calculs que nous avons faits précédemment reposent sur les répondants, où chaque ligne vaut 1.
+    On parle de calcul sur effectif brut
+    C'est pratique, mais cela ne correspond pas nécessairement à la population de la France. 
+    Par exemple, dans le jeu de données, parmi les personnes ayant entre 15 et 19 ans inclus sont :
+        - 54.0 % de femmes
+        - 46.0 % d'hommes
+    Or dans la population française, voici les valeur obtenues par l'INSEE : 
+        - 48.4 % de femmes
+        - 51.6 % d'hommes
+    Le rapport est inversé. Il faut donc appliquer un traitement statistique, appelée redressement, 
+    qui va permettre de se rapprocher de la bonne proportion dans le jeu de données. 
+    Une fois le redressement effectué, chaque ligne se verra attribuer un "poids", qui ne vaudra plus 1.
+    Nous ne nous attarderons pas sur la méthodologie, qui n'est pas l'objet du cours.
+    Nous allons cependant utiliser le redressment effectué par Vertigo, 
+    qui nous permettra d'obtenir les résultats publiés.
+
+
+    Chargez les données des fichiers :
+        - data/poids_statistiques.csv
+    
+    A l'aide de la question 1, joignez les données des poids aux données néttoyées.
+    Attention à la différence entre pd.merge(), jointure sur les colonnes, et pd.join(), jointure sur les index.
+    Vous devez obtenir 9802 lignes dans le résultat. 
+    
+    Si vous n'obtenez pas ce résultats, posez vous ces deux questions : 
+    - Ai-je bien respecter le caractère d'unicité des lignes ?
+    - Ai-je choisi le bon type de jointure ?
+
+
+8 - Recalculer la part des hommes et des femmes ayant entre 15 et 19 ans 
+    en utilisant les poids statistiques à la place du nombre de lignes.
+    Y a t'il une amélioration des proportion par rapport à la proportion réelle ? 
+
+
+9 - Refaire les questions 2 et 4 (seulement la note moyenne) en utilisant les poids statistiques.
+
+
+10 - Refaire les questions 5 et 6 en utilisant les poids statistiques.

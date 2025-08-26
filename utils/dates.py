@@ -5,7 +5,7 @@ from typing import Union
 
 
 
-def mois_cine(date: Union[str | datetime]) -> int:
+def mois_cine(date: Union[str, datetime]) -> int:
 
     if isinstance(date, str):
         date = datetime.strptime(date, "%Y-%m-%d")
@@ -32,7 +32,7 @@ def mois_cine(date: Union[str | datetime]) -> int:
     return int(f"{year % 100:02}{month:02}")
 
 
-def sem_cine_inv(
+def sem_cine(
         date: datetime | str,
         date_separator: str = "-",
 ) -> int:
