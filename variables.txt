@@ -1,3 +1,6 @@
+pid 
+    nombre aléatoire entre 400 000 et 2 012 511 826
+
 vague_cine_inv      
     range(2326, 2331)
 
@@ -86,11 +89,11 @@ s4ad
     2 : Oui la carte CinéPass valable dans les cinémas PATHÉ et GAUMONT
     3 : Non
 
-q1ad                        datetime    Date de l'entrée au cinéma
-
+q1ad                        
+    date entre le 2023-06-19 et le 2023-08-10
 
 q2ad 
-
+    nombre entre 99 et 3010
 
 q12ad_1
     range(0, 11)
@@ -106,9 +109,9 @@ q13ad
 q14ad
     range(1, 96)
 
-q14bisad                    Int64   Code du cinéma
-    range(1_000_000, 10_000_000)
+q14bisad 
+    nombre entre 1 000 000 et 10 000000
 
-q15ad                       Int8    Cinéma habituel
+q15ad
     1 : Je vais toujours ou presque toujours dans ce cinéma
     2 : Ce n’est pas mon cinéma habituel
