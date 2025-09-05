@@ -7,7 +7,8 @@ INSTALLATION DE VS CODE + ENVIRONNEMENT VENV + GIT
 
 🎯 Objectifs :
 ---------------
-Préparer un environnement de développement Python propre et professionnel avec Visual Studio Code, un environnement virtuel (venv), et la connexion à un dépôt Git.
+Préparer un environnement de développement Python propre et professionnel avec Visual Studio Code, un environnement virtuel (venv), et la connexion à un repo Git.
+Si jamais cela ne fonctionne pas, il est toujours possible de télécharger le repo Git depuis l'url (voir secction 4)
 
 🎓 Pré-requis :
 ----------------
@@ -43,7 +44,7 @@ Préparer un environnement de développement Python propre et professionnel avec
 
     ✅ 2.1. Installer Git si ce n'est pas déjà fait
     --------------------------------------------
-    Download from git-scm.com and install.
+    Télécharger depuis git-scm.com.
 
     ✅ 2.2. Ouvrir VSCode pour se connecter à GitHub
     ---------------------------------------------
@@ -103,3 +104,19 @@ Préparer un environnement de développement Python propre et professionnel avec
     ✅ 3.5 Installer des bibliothèques :
     ---------------------------------
     Exemple : pip install pandas==2.3.0 numpy==1.26.4 plotly==6.2.0
+
+
+4. TELECHARGER LE REPO DEPUIS L'URL
+-----------------------------------
+
+    ✅ 4.1 Aller sur l'url :
+    -----------------------------------
+    Copier-coller cette adresse dans la barre de recherche de votre navigateur https://github.com/Anthony-Lannes/SORBONNE_MASTER_ICI_SBI.git
+
+    ✅ 4.2 Télécharger le repo :
+    -----------------------------------
+        - Cliquer sur le bouton vert "<> Code"
+        - Cliquer sur "Download .zip"
+        - Aller dans vos Téléchargements et dézipper le dossier
+        - Optionnel mais recommandé : Déplacer le dossier dézippé à un nouvel endroit sur votre machine 
+          Par exemple C:\Users\{votre_nom}

@@ -34,8 +34,6 @@ Supprimez :
 
  
     
-
-
 4-Structure et types. 
 Regardez la mémoire utilisée par le jeu de données avec .memory_usage().
 Pour chaque colonne, changez le type de données par celui indiqué dans le codebook.

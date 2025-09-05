@@ -2,7 +2,10 @@
 __pycache__/
 *.py[cod]
 *$py.class
-*.ipynb
+02_clean_out_data.ipynb
+03_bar_chart.ipynb
+04_evolution_scatter_line.ipynb
+05_mapping.ipynb
 cleaned_data.pkl
 *.docx
 

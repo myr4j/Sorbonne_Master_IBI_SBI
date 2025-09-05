@@ -1,0 +1,61 @@
+{
+  "clients": [
+    {"id": "C001", "nom": "Alice Durand", "email": "alice@example.com", "ville": "Lyon"},
+    {"id": "C002", "nom": "Bob Martin", "email": "bob.martin@example.com", "ville": "Paris"},
+    {"id": "C003", "nom": "Chloé Lefèvre", "email": "chloe.lefevre@example.com", "ville": "Paris"},
+    {"id": "C004", "nom": "David Bernard", "email": "david.bernard@example.com", "ville": "Lille"},
+    {"id": "C005", "nom": "Eva Petit", "email": "eva.petit@example.com", "ville": "Lyon"}
+  ],
+  "produits": {
+    "P001": {"nom": "Clavier mécanique", "prix": 79},
+    "P002": {"nom": "Souris sans fil", "prix": 39},
+    "P003": {"nom": "Écran 24\"", "prix": 149},
+    "P004": {"nom": "Câble HDMI", "prix": 12},
+    "P005": {"nom": "Webcam HD", "prix": 59}
+  },
+  "commandes": [
+    {
+      "id": "O001",
+      "client_id": "C001",
+      "lignes": [
+        {"product_id": "P001", "quantite": 1},
+        {"product_id": "P004", "quantite": 2}
+      ],
+      "statut": "expédiée"
+    },
+    {
+      "id": "O002",
+      "client_id": "C002",
+      "lignes": [
+        {"product_id": "P002", "quantite": 1}
+      ],
+      "statut": "en préparation"
+    },
+    {
+      "id": "O003",
+      "client_id": "C003",
+      "lignes": [
+        {"product_id": "P003", "quantite": 1},
+        {"product_id": "P004", "quantite": 1}
+      ],
+      "statut": "livrée"
+    },
+    {
+      "id": "O004",
+      "client_id": "C002",
+      "lignes": [
+        {"product_id": "P001", "quantite": 1},
+        {"product_id": "P002", "quantite": 2}
+      ],
+      "statut": "annulée"
+    },
+    {
+      "id": "O005",
+      "client_id": "C005",
+      "lignes": [
+        {"product_id": "P005", "quantite": 1}
+      ],
+      "statut": "expédiée"
+    }
+  ]
+}
