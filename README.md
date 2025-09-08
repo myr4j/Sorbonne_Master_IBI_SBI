@@ -3,7 +3,7 @@ Ce repo est à destination des étudiants en Master IBI et SBI de l'Université 
 
 ===================================================
 INSTALLATION DE VS CODE + ENVIRONNEMENT VENV + GIT
-===================================================
+
 
 🎯 Objectifs :
 ---------------
