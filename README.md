@@ -15,6 +15,13 @@ Si jamais cela ne fonctionne pas, il est toujours possible de télécharger le r
 - Python installé (https://www.python.org/downloads/)
 
 
+0. PREAMBULE
+-------------------------------
+    Les données mises à votre disposition pour ce cours sont réelles. Leur utilisation est à but pédagogique 
+    et doit rester dans un cadre privé. Il est donc formellement interdit de les partager à des tiers.
+    Il en va de même pour les documents contenant la mention "confidentiel".
+
+
 1. INSTALLER VISUAL STUDIO CODE
 -------------------------------
 
