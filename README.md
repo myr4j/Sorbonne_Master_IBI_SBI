@@ -1,9 +1,10 @@
 # sorbonne
 Ce repo est à destination des étudiants en Master IBI et SBI de l'Université Paris I La Sorbonne pour le cours "Analyse des données avec python"
 
-==================================================
+===================================================
 INSTALLATION DE VS CODE + ENVIRONNEMENT VENV + GIT
-==================================================
+===================================================
+===================================================
 
 🎯 Objectifs :
 ---------------
