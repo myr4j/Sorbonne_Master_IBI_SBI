@@ -3,10 +3,9 @@ __pycache__/
 *.py[cod]
 *$py.class
 reponses/
-
-
-sandbox.ipynb
-cleaned_data.pkl
+sandbox*
+data/cleaned_data.pkl
+data/clean_step_1.pkl
 *.docx
 
 # C extensions
