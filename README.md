@@ -88,8 +88,7 @@ Si jamais cela ne fonctionne pas, il est toujours possible de télécharger le r
 
     ✅ 3.1 Créer et ouvrir un dossier :
     -----------------------------------
-    Créer un dossier sur votre machine (exemple : `mon_projet_python`).
-    Dans VS Code : *Fichier > Ouvrir un dossier* → sélectionner ce dossier.
+    Dans VS Code : *Fichier > Ouvrir un dossier → sélectionner ce dossier.
 
     ✅ 3.2 Ouvrir le terminal intégré :
     -----------------------------------
@@ -97,20 +96,20 @@ Si jamais cela ne fonctionne pas, il est toujours possible de télécharger le r
 
     ✅ 3.3 Créer l’environnement virtuel :
     --------------------------------------
-        - Windows : python -m venv env
-        - macOS/Linux : python3 -m venv env
-    Un dossier `env/` sera créé : c’est votre environnement isolé.
+        - Windows : python -m venv venv
+        - macOS/Linux : python3 -m venv venv
+    Un dossier `venv/` sera créé : c’est votre environnement isolé.
 
     ✅ 3.4 Activer l’environnement :
     ---------------------------------
-        - Windows (PowerShell) : .\env\Scripts\Activate.ps1
-        - macOS/Linux : source env/bin/activate
+        - Windows (PowerShell) : .\venv\Scripts\Activate.ps1
+        - macOS/Linux : source venv/bin/activate
 
-    Une fois activé, l’invite du terminal commence par `(env)`.
+    Une fois activé, l’invite du terminal commence par `(venv)`.
 
     ✅ 3.5 Installer des bibliothèques :
     ---------------------------------
-    Exemple : pip install pandas==2.3.0 numpy==1.26.4 plotly==6.2.0
+    Exemple : pip install pandas==2.3.0 numpy==1.26.4 plotly==6.2.0 ipykernel
 
 
 4. TELECHARGER LE REPO DEPUIS L'URL
@@ -127,3 +126,22 @@ Si jamais cela ne fonctionne pas, il est toujours possible de télécharger le r
         - Aller dans vos Téléchargements et dézipper le dossier
         - Optionnel mais recommandé : Déplacer le dossier dézippé à un nouvel endroit sur votre machine 
           Par exemple C:\Users\{votre_nom}
+
+
+5. SI VOS NOTEBOOK NE FONCTIONNENT PAS SUR VS CODE
+--------------------------------------------------
+
+    ✅ 4.1 Télécharger la suite anaconda gratuitement :
+    -----------------------------------
+    Copier-coller cette adresse dans la barre de recherche de votre navigateur : https://www.anaconda.com/download
+
+    ✅ 4.2 Installer anacoda :
+    -----------------------------------
+
+    ✅ 4.3 Ouvrir et lancer Jupyter :
+    -----------------------------------
+        - Une nouvelle fenêtre s'ouvre dans votre navigateur
+        - Déplacez-vous dans le dossier contenant les notebooks pour le cours
+        - Ouvrir le notbook et commencer à coder
+        - Attention les chemins pour charger les différentes données ne snt peut-être plus les bons.
+          Notamment si les adresses commencent par "../", il faudra supprimer ces caractères.

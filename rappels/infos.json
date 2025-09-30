@@ -1,3 +1,5 @@
+
+
 {
   "clients": [
     {"id": "C001", "nom": "Alice Durand", "email": "alice@example.com", "ville": "Lyon"},
@@ -53,7 +55,7 @@
       "id": "O005",
       "client_id": "C005",
       "lignes": [
-        {"product_id": "P005", "quantite": 1}
+        {"product_id": "P002", "quantite": 1}
       ],
       "statut": "expédiée"
     }

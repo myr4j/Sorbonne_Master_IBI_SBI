@@ -2,11 +2,9 @@
 __pycache__/
 *.py[cod]
 *$py.class
-reponses/00_Bases_de_python_answers.ipynb
-02_clean_out_data.ipynb
-03_bar_chart.ipynb
-04_evolution_scatter_line.ipynb
-05_mapping.ipynb
+reponses/
+
+
 sandbox.ipynb
 cleaned_data.pkl
 *.docx

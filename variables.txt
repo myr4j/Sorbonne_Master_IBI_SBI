@@ -2,7 +2,7 @@ pid
     nombre aléatoire entre 400 000 et 2 012 511 826
 
 vague_cine_inv      
-    range(2326, 2331)
+    range(2326, 2332)
 
 age
     range(3, 121)
@@ -73,6 +73,8 @@ s2ad
     25 : Homme/Femme au foyer
     26 : Retraité
     27 : Autre inactif
+    210 : Etudiant,
+    211 : Lycéen, collégien
 
 s3ad
     1 : Plusieurs fois par semaine
